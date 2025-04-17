@@ -15,7 +15,7 @@ function HomeScreen() {
       {error && <p className="text-danger">{error}</p>}
       <div className="row">
         {tickets?.map((ticket) => (
-          <div className="col-md-4" key={ticket.id}>
+          <div className="col-md-4" key={ticket._id}>
             <TicketCard ticket={ticket} />
           </div>
         ))}

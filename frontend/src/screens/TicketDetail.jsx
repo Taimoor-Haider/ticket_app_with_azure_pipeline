@@ -16,10 +16,7 @@ function TicketDetail() {
   const { loading, error, ticket } = useSelector(ticketDetailSelector);
 
   useEffect(() => {
-    if (!state.ticket) {
-      dispatch(fetchTicket(id));
-    } else {
-    }
+    dispatch(fetchTicket(id));
   }, [id, dispatch]);
 
   if (loading) return <p>Loading ticket...</p>;

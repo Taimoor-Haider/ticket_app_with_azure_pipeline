@@ -5,7 +5,7 @@ const TicketCard = ({ ticket }) => {
   const navigate = useNavigate();
 
   const handleBuyClick = () => {
-    navigate(`/ticket/${ticket.id}`, { state: { ticket } }); // Passing ticket as state
+    navigate(`/ticket/${ticket._id}`, { state: { ticket } }); // Passing ticket as state
   };
   const formattedDate = new Date(date).toLocaleString(); // format the date to a readable format
 

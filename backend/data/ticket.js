@@ -1,6 +1,5 @@
 const tickets = [
   {
-    id: 1,
     category: "Concert",
     title: "Taylor Swift - The Eras Tour",
     location: "Madison Square Garden, NY",
@@ -14,7 +13,6 @@ const tickets = [
     organizer: "Live Nation",
   },
   {
-    id: 2,
     category: "Movie",
     title: "Avengers: Secret Wars",
     location: "AMC Times Square, NY",
@@ -27,7 +25,6 @@ const tickets = [
     organizer: "Marvel Studios",
   },
   {
-    id: 3,
     category: "Comedy",
     title: "Kevin Hart Live",
     location: "The Comedy Store, LA",
@@ -40,7 +37,6 @@ const tickets = [
     organizer: "Laugh Central",
   },
   {
-    id: 4,
     category: "Show",
     title: "The Lion King - Broadway",
     location: "Minskoff Theatre, NY",
@@ -53,7 +49,6 @@ const tickets = [
     organizer: "Disney Theatrical",
   },
   {
-    id: 5,
     category: "Concert",
     title: "Coldplay - World Tour",
     location: "Wembley Stadium, London",
