@@ -1,0 +1,9 @@
+# Ignore environment variables
+.env
+
+# Ignore root-level node_modules
+/node_modules
+
+# Ignore frontend app's node_modules
+/frontend/node_modules
+
