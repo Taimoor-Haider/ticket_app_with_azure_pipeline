@@ -33,6 +33,7 @@ steps:
     Contents: |
       frontend/dist/**
       backend/**
+      node_modules
       package.json
       package-lock.json
     TargetFolder: $(Build.ArtifactStagingDirectory)
