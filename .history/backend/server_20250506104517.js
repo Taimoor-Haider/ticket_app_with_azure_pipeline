@@ -31,9 +31,6 @@ app.use(express.static(distPath));
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "..", "frontend", "dist", "index.html"));
 });
-app.get("/", (req, res) => {
-  res.sendFile("index.html", { root: distPath });
-});
 
 // Error handler (should be last)
 app.use(errorHandler);
@@ -41,4 +38,9 @@ app.use(errorHandler);
 const port = 8080 || 6000;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`.yellow.bold);
+});
+
+app.use();
+app.get("/*", (req, res) => {
+  res.sendFile("index.html", { root: disPath });
 });

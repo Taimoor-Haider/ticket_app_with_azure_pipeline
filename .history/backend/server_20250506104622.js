@@ -28,9 +28,7 @@ app.use("/api/auth", userRoutes);
 app.use(express.static(distPath));
 
 // // Handle SPA routing – redirect all unknown routes to index.html
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "frontend", "dist", "index.html"));
-});
+
 app.get("/", (req, res) => {
   res.sendFile("index.html", { root: distPath });
 });
