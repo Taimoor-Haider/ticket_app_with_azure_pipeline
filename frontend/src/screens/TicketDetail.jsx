@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import Button from "react-bootstrap/Button";
 import {
   fetchTicket,
+  setTicketWithoutRequest,
   ticketDetailSelector,
 } from "../features/ticketDetailSlice";
 
@@ -16,7 +17,11 @@ function TicketDetail() {
   const { loading, error, ticket } = useSelector(ticketDetailSelector);
 
   useEffect(() => {
-    dispatch(fetchTicket(id));
+    if (state.ticket) {
+      dispatch(setTicketWithoutRequest(state.ticket));
+    } else {
+      dispatch(fetchTicket(id));
+    }
   }, [id, dispatch]);
 
   if (loading) return <p>Loading ticket...</p>;

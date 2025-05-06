@@ -47,3 +47,7 @@ export const fetchTicket = (id) => async (dispatch) => {
     dispatch(setError(errorMessage));
   }
 };
+
+export const setTicketWithoutRequest = (ticket) => (dispatch) => {
+  dispatch(setTicket(ticket));
+};

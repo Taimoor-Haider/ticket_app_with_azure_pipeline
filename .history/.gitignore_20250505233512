@@ -1,0 +1,6 @@
+# Ignore environment variables
+.env
+
+# Ignore frontend app's node_modules
+/frontend/node_modules
+
