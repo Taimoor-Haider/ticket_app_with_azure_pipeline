@@ -2,7 +2,7 @@
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
-  "proxy": "http://websitewithbackend-f5c2dghpbxcvafen.eastasia-01.azurewebsites.net",
+  "proxy": "https://websitewithbackend-f5c2dghpbxcvafen.eastasia-01.azurewebsites.net",
   "type": "module",
   "scripts": {
     "dev": "vite",
